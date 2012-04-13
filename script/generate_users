@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+APP_PATH = File.expand_path('../../config/application',  __FILE__)
+require File.expand_path('../../config/boot',  __FILE__)
+
+num = ARGV[0].to_i || 10
+
+num.times do |i|
+  User.create!  :first_name => Faker::Name.first_name,
+                :last_name => Faker::Name.last_name,
+                :email => Faker::Internet.email,
+                :dob => Date.today - rand(30000).days,
+                :score => rand(1000000)
+end

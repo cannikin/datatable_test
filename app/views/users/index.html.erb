@@ -1,0 +1,22 @@
+<h1>Listing users</h1>
+
+<form class="form-search">
+<table id="users" class="table table-striped" data-source="<%= users_path(:format => 'json') %>">
+  <thead>
+    <tr>
+      <th>Last name</th>
+      <th>First name</th>
+      <th>Email</th>
+      <th>Dob</th>
+      <th>Score</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  </tbody>
+</table>
+</form>
+
+<%= link_to 'New User', new_user_path, :class => 'btn btn-success new-user' %>
