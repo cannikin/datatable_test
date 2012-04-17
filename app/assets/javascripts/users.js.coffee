@@ -12,7 +12,7 @@ jQuery ->
     bScrollInfinite: true
     bScrollCollapse: true
     sScrollY: '600px'
-    iScrollLoadGap: 100
+    iScrollLoadGap: 200
     # bStateSave: true
     aoColumnDefs: [{bSortable: false, aTargets: [5,6]}]
 
